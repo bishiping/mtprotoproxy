@@ -1,4 +1,3 @@
-# 没必要更改此端口，若要更改此端口，也要手动去改docker-compose.yml文件和./nginx/nginx.conf里对应的端口
 PORT = 1234
 
 # name -> secret (32 hex chars)
@@ -23,7 +22,6 @@ MODES = {
 # The domain for TLS mode, bad clients are proxied there
 # Use random existing domain, proxy checks it on start
 # TLS_DOMAIN = "www.google.com"
-# 如果要更改此域名，请记得同时更改./nginx/nginx.conf里的www.clouflare.com为你要更改的域名
 TLS_DOMAIN = "www.cloudflare.com"
 PROXY_PROTOCOL = True
 
